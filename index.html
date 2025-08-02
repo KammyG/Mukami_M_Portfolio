@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta configuration -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christiana Muriuki | Portfolio</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Tab Radios -->
+  <input type="radio" name="tab" id="tab-home" checked>
+  <input type="radio" name="tab" id="tab-education">
+  <input type="radio" name="tab" id="tab-interests">
+  <input type="radio" name="tab" id="tab-projects">
+  <input type="radio" name="tab" id="tab-contact">
+
+  <!-- Labels are linked to radio buttons to control tab visibility -->
+  <header>
+    <div class="logo">Christiana Muriuki</div>
+    <nav>
+      <label for="tab-home">Home</label>
+      <label for="tab-education">Education</label>
+      <label for="tab-interests">Interests</label>
+      <label for="tab-projects">Projects</label>
+      <label for="tab-contact">Contact</label>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="home" class="tab-content">
+      <div class="home-content">
+        <img src="main.jpg" alt="Christiana's photo" class="profile-pic">
+        <div class="home-text">
+          <p class="intro-text">Hey there, I'm Christiana 👩‍💻✨🎨</p>
+          <p class="about-paragraph">
+            I’m Christiana Muriuki, a detail-oriented IT professional with hands-on experience in backend development, cloud computing, and data entry. I'm a certified Backend Engineer and AWS Cloud Specialist, passionate about building efficient digital solutions and solving real-world problems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Tab -->
+    <section id="education" class="tab-content">
+      <h2>Educational Background</h2>
+      <p>Backend Engineering Certificate – ALX Africa, 2025</p>
+      <p>AWS Cloud Computing Certification – Amazon Web Services, 2024</p>
+      <p>Introduction to Cybersecurity – CISCO, 2023</p>
+      <a href="assets/CHRISTIANA MURIUKI cv '.pdf" download>📄 Download My CV</a>
+    </section>
+
+    <!-- Interests Tab -->
+    <section id="interests" class="tab-content">
+      <h2>My Interests</h2>
+      <ul>
+        <li>Web Development 💻</li>
+        <li>Cloud Computing (AWS Certified) ☁️</li>
+        <li>Cybersecurity 🔐</li>
+        <li>Emerging Tech Trends 🚀</li>
+        <li>Games 🎮</li>
+        <li>Reading Books 📚</li>
+        <li>Volunteering 🤝</li>
+      </ul>
+    </section>
+
+    <!-- Projects Tab -->
+    <section id="projects" class="tab-content">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>OCR Engine with Python</strong> – Extracts text from scanned images using Tesseract.</li>
+        <li><strong>Moving Truck Booking API</strong> – Django REST API to find and book nearby moving trucks.</li>
+        <li><strong>Thrift Shop Website (Order Nasi)</strong> – E-commerce front-end built with React.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Tab -->
+    <section id="contact" class="tab-content">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message"></textarea><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Christiana Muriuki. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #c9bed4;
+    color: #5b5555;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body {
+    background: url('images/wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Hide radio buttons */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0e0c0c;
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  nav label {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    background-color: #b74b4b;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  nav label:hover {
+    background-color: #a13f3f;
+  }
+  
+  /* Main layout */
+  main {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  /* Tab content default hidden */
+  .tab-content {
+    display: none;
+  }
+  
+  /* Show only selected tab */
+  #tab-home:checked ~ main #home,
+  #tab-education:checked ~ main #education,
+  #tab-interests:checked ~ main #interests,
+  #tab-projects:checked ~ main #projects,
+  #tab-contact:checked ~ main #contact {
+    display: block;
+  }
+  
+  /* Home Styling */
+  .home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 350px;
+    border-radius: 50%;
+    border: 4px solid #b74b4b;
+    box-shadow: 0 0 10px #b74b4b;
+  }
+  
+  .home-text {
+    max-width: 600px;
+  }
+  
+  /* Animation */
+  .intro-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeSlideIn 1.5s ease-out forwards;
+    color: #fff
+  }
+  
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .about-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff
+  }
+  
+  /* Education Section */
+  #education {
+    text-align: center;
+  }
+  
+  #education h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  
+  #education p {
+    margin-bottom: 0.8rem;
+    color: #fff;
+  }
+  
+  #education a {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #7e5656;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  #education a:hover {
+    background-color: #a76f6f;
+  }
+  
+  /* Interests Section */
+  .interests-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    padding: 2rem;
+    background: url('images/Wallpaper.jpg') no-repeat center center fixed;
+  }
+  
+
+  #interests h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #interests ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #interests li {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    justify-content: center;
+  }
+
+  #contact h2 {
+    font-size: 2.0rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  
+  /* Contact */
+  form input,
+  form textarea {
+    width: 50%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  form label {
+    color: #fff; 
+    font-weight: bold; 
+  }
+
+  form button {
+    background-color: #b74b4b;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #a13f3f;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: #fff;
+    margin-top: auto;
+  }
+  
+  /* Projects Section */
+#projects {
+    background: url('images/ef.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 50px;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem; /* Make heading larger */
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  
+  #projects ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #projects li {
+    font-size: 1.5rem; /* Increase font size of each project */
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #fff;
+  }
+  
