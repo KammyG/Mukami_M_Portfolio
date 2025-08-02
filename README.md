@@ -38,7 +38,7 @@ This is a clean, responsive, and minimal portfolio built using only **HTML** and
 ##  Deployment
 
 
- _Currently deployed at:_ `https://your-username.github.io/Mukami_M_Portfolio/` (netlify)
+ _Currently deployed at:_ `https://KammyG.github.io/Mukami_M_Portfolio/` (https://mukamim.netlify.app/)
 
 ---
 
